@@ -16,7 +16,6 @@ fetch('/public/components/footer/')
   .then(async (html) => {
     const footerElement = document.querySelector('#footer');
     footerElement.innerHTML = html;
-    return import('/public/components/footer/footer.js');
   })
   .catch((error) => {
     console.error(error);
